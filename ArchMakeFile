@@ -1,0 +1,4 @@
+all:
+	gcc func.c main.c -o Archiver
+leaks:
+	gcc func.c main.c -o Archiver -fsanitize=address
